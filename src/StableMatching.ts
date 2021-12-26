@@ -5,9 +5,9 @@ import {
 } from './StableMatching.types';
 
 export default class StableMatching {
-  public readonly mentees: PreferenceList[];
+  private readonly mentees: PreferenceList[];
 
-  public readonly mentors: PreferenceList[];
+  private readonly mentors: PreferenceList[];
 
   /**
    * The # of mentees that are not currenlty assigned to a mentor.
