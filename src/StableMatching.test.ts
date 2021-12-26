@@ -1,10 +1,7 @@
 import cases from 'jest-in-case';
 
 import StableMatching from './StableMatching';
-import {
-  StableMatchingArgs,
-  StableMatchingPairing,
-} from './StableMatching.types';
+import { Pairing, StableMatchingArgs } from './StableMatching.types';
 
 export type TestObject<InputType, OutputType> = {
   input: InputType;
@@ -12,11 +9,8 @@ export type TestObject<InputType, OutputType> = {
 };
 
 cases(
-  'StableMatching.run()',
-  ({
-    input,
-    output,
-  }: TestObject<StableMatchingArgs, StableMatchingPairing[]>) => {
+  'Stable Matching Algorithm',
+  ({ input, output }: TestObject<StableMatchingArgs, Pairing[]>) => {
     const actualResult: [number, number][] = new StableMatching(input).run();
     const sortedActualResult: [number, number][] = actualResult.sort();
     expect(sortedActualResult).toEqual(output);
