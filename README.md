@@ -4,6 +4,8 @@ This is a Typescript implementation of the Gale-Shapley algorithm, which finds
 a stable matching between two equally sized sets of elements given an ordering
 of preferences for each element.
 
+To read more about this algorithm, read [here](https://en.wikipedia.org/wiki/Stable_marriage_problem).
+
 ## Naming Variation
 
 The stable-matching problem is also called the "Stable Marriage" problem, and
