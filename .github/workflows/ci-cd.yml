@@ -3,7 +3,7 @@ name: CI/CD
 on: [push]
 
 jobs:
-  Format, Lint, Unit Tests:
+  Run Lint and Unit Tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
