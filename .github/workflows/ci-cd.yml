@@ -16,6 +16,7 @@ jobs:
       - run: npm run test
 
   build-publish:
+    needs: test
     if: github.ref == 'refs/heads/rami/actions'
     runs-on: ubuntu-latest
     steps:
