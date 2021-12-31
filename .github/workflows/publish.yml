@@ -16,7 +16,7 @@ jobs:
 
       # Note that the following steps are duplicated from ./test.yml.
       # TODO: Figure out how to make re-usable workflows.
-      - run: npm ci
+      - run: npm install
       - run: npm run format
       - run: npm run lint
       - run: npm run test
