@@ -10,7 +10,7 @@ export default class StableMatching {
   private readonly mentors: PreferenceList[];
 
   /**
-   * The # of mentees that are not currenlty assigned to a mentor.
+   * The # of mentees that are not currently assigned to a mentor.
    *
    * When this value is 0, that means the algorithm will be finished running.
    *
